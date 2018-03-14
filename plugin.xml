@@ -55,7 +55,7 @@
       <clobbers target="window.plugins.launchmyapp" />
     </js-module>
 
-    <config-file target="res/xml/config.xml" parent="/*">
+    <config-file target="app/src/main/res/xml/config.xml" parent="/*">
       <feature name="LaunchMyApp">
         <param name="android-package" value="nl.xservices.plugins.LaunchMyApp"/>
       </feature>
