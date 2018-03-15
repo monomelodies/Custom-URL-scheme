@@ -63,7 +63,10 @@
 
     <source-file src="src/android/nl/xservices/plugins/LaunchMyApp.java" target-dir="src/nl/xservices/plugins"/>
 
-    <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest/application/activity">
+    <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merge">
+    </edit-config>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
